@@ -23,12 +23,20 @@ html {
   --grey-medium: #d3d9e2;
   --grey-light: #e5eaf1;
 
+  --linear: linear-gradient(
+    195.96deg,
+    #5498ff -122.01%,
+    #428eff -8.36%,
+    #297fff 98.4%
+  );
+
   /* BEFORE (font-size: 62.5%) 1rem = 16px */
   /* AFTER (font-size: 62.5%) 1rem = 10px */
   font-size: 62.5%;
 }
 
 body {
+  display: flex;
   height: 100vh;
   background: var(--background);
 }
@@ -41,6 +49,11 @@ textarea {
   font-size: clamp(14px, 1.6rem, 2vw);
 
   font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* INPUTS AND BUTTONS */
@@ -81,11 +94,6 @@ button.outlined,
   background: var(--white);
   color: var(--blue);
   border: 0.2rem solid var(--blue);
-}
-
-button.outlined .content {
-  width: 100%;
-  margin: 0 auto;
 }
 
 /* HIDE LABEL */
